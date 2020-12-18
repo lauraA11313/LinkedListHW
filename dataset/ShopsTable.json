@@ -1,0 +1,30 @@
+{
+	"name": "ShopsTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Outputsql",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Copied Datasets"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "name",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ShopsList"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

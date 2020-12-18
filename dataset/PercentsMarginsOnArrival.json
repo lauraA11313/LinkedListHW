@@ -1,0 +1,63 @@
+{
+	"name": "PercentsMarginsOnArrival",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Outputsql",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "datetime",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "shop_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "qnty",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "price_net",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 2
+			},
+			{
+				"name": "costOfProdSupply",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 2
+			},
+			{
+				"name": "marginByProduct",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 2
+			},
+			{
+				"name": "marginPercentOnArrival",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "MarginsByProducts"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

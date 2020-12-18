@@ -1,0 +1,25 @@
+{
+	"name": "triggerCopyData",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "Data to SQL",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Day",
+				"interval": 1,
+				"startTime": "2020-12-18T01:45:00Z",
+				"endTime": "2020-12-29T01:45:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}

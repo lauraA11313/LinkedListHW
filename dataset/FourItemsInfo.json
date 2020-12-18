@@ -1,0 +1,51 @@
+{
+	"name": "FourItemsInfo",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Outputsql",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "product_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "itemsBought",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "spentOnPurchase",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 2
+			},
+			{
+				"name": "marginByProduct",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 2
+			},
+			{
+				"name": "totalItemsSold",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "turnoverCoefficient",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Turnover1111"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

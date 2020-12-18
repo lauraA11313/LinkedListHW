@@ -1,0 +1,41 @@
+{
+	"name": "ProductsTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Outputsql",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Copied Datasets"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "name",
+				"type": "varchar"
+			},
+			{
+				"name": "category_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "price_net",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 2
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ShopProducts"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

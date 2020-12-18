@@ -1,0 +1,25 @@
+{
+	"name": "TriggerFormatData",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "Formatting data",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Day",
+				"interval": 1,
+				"startTime": "2020-12-18T02:37:00Z",
+				"endTime": "2020-12-28T02:37:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}
